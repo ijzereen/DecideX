@@ -17,6 +17,9 @@ app.add_middleware(
         "http://localhost:3003",  # React 개발 서버
         "https://*.amplifyapp.com",  # Amplify 기본 도메인
         "https://*.amazonaws.com",   # AWS 서비스 도메인
+        "https://*.elasticbeanstalk.com",  # Elastic Beanstalk 도메인
+        "http://*.elasticbeanstalk.com",   # Elastic Beanstalk HTTP
+        "*"  # 개발 중에는 모든 origin 허용 (운영에서는 제거)
     ],
     allow_credentials=True,
     allow_methods=["*"],
