@@ -43,7 +43,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd mindmap-app
-        npm ci
+        npm install
     
     - name: Build frontend
       run: |
